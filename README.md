@@ -4,6 +4,10 @@
 
 > This repository contains Subtale's **opinionated** rustfmt configuration file ([`.rustfmt.toml`][config]).
 
+## Usage
+
+The [`.rustfmt.toml`][config] should be included in the root directory of your Rust project. This will ensure that rustfmt picks it up when formatting.
+
 ## Configuration options
 
 Below you can find reasoning behind all of the configuration options present in Subtale's custom rustfmt configuration.
