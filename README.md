@@ -18,48 +18,6 @@ Some of these settings are set to their default values; this is intentional to e
 
 This is a required option because some of the below settings are considered "unstable" by rustfmt.
 
-### `reorder_imports = true`
-
-Ensures that imports and extern crate statements are sorted alphabetically (in groups).
-
-```rs
-use dolor;
-use ipsum;
-use lorem;
-use sit;
-```
-
-### `imports_layout = "HorizontalVertical"`
-
-Forces the style of items inside an imports block.
-
-```rs
-use foo::{xxxxxxxxxxxxxxxxxx, yyyyyyyyyyyyyyyyyy, zzzzzzzzzzzzzzzzzz};
-
-use foo::{
-    aaaaaaaaaaaaaaaaaa,
-    bbbbbbbbbbbbbbbbbb,
-    cccccccccccccccccc,
-    dddddddddddddddddd,
-    eeeeeeeeeeeeeeeeee,
-    ffffffffffffffffff,
-};
-```
-
-### `imports_granularity = "Crate"`
-
-Merges imports from the same crate into a single `use` statement.
-
-```rs
-use foo::{
-    a, b,
-    b::{f, g},
-    c,
-    d::e,
-};
-use qux::{h, i};
-```
-
 ### `group_imports = "StdExternalCrate"`
 
 Reorganizes imports into three distinct groups:
@@ -81,6 +39,48 @@ use uuid::Uuid;
 use super::schema::{Context, Payload};
 use super::update::convert_publish_payload;
 use crate::models::Event;
+```
+
+### `imports_granularity = "Crate"`
+
+Merges imports from the same crate into a single `use` statement.
+
+```rs
+use foo::{
+    a, b,
+    b::{f, g},
+    c,
+    d::e,
+};
+use qux::{h, i};
+```
+
+### `imports_layout = "HorizontalVertical"`
+
+Forces the style of items inside an imports block.
+
+```rs
+use foo::{xxxxxxxxxxxxxxxxxx, yyyyyyyyyyyyyyyyyy, zzzzzzzzzzzzzzzzzz};
+
+use foo::{
+    aaaaaaaaaaaaaaaaaa,
+    bbbbbbbbbbbbbbbbbb,
+    cccccccccccccccccc,
+    dddddddddddddddddd,
+    eeeeeeeeeeeeeeeeee,
+    ffffffffffffffffff,
+};
+```
+
+### `reorder_imports = true`
+
+Ensures that imports and extern crate statements are sorted alphabetically (in groups).
+
+```rs
+use dolor;
+use ipsum;
+use lorem;
+use sit;
 ```
 
 [mit]: LICENSE
