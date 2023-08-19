@@ -1,6 +1,7 @@
 # rustfmt
 
-[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen)][mit]
+[![OSS by Subtale](https://img.shields.io/badge/oss_by-subtale-white?style=flat-square&labelColor=%2389216B&color=%23DA4453)][oss]
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square&labelColor=%2389216B&color=%23DA4453)][mit]
 
 > This repository contains Subtale's **opinionated** rustfmt configuration file ([`.rustfmt.toml`][config]).
 
@@ -10,7 +11,7 @@ The [`.rustfmt.toml`][config] should be included in the root directory of your R
 
 ## Configuration options
 
-Below you can find reasoning behind all of the configuration options present in Subtale's custom rustfmt configuration.
+Below you can find the reasoning behind all of the configuration options present in Subtale's custom rustfmt configuration.
 
 Some of these settings are set to their default values; this is intentional to ensure that they are kept as default.
 
@@ -227,5 +228,6 @@ ipsum.map(|dolor| dolor.sit())?;
 
 Breaks comments to fit within the maximum line width (80 characters).
 
+[oss]: https://oss.subtale.com
 [mit]: LICENSE
 [config]: .rustfmt.toml
