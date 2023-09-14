@@ -1,7 +1,7 @@
 # rustfmt
 
-[![OSS by Subtale](https://img.shields.io/badge/oss_by-subtale-white?style=flat-square&labelColor=%2389216B&color=%23DA4453)][oss]
-[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square&labelColor=%2389216B&color=%23DA4453)][mit]
+[![OSS by Subtale](https://img.shields.io/badge/oss_by-subtale-white?style=flat-square&labelColor=%2314213D&color=%23FCA311)][oss]
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen?style=flat-square&labelColor=%2314213D&color=%23FCA311)][mit]
 
 > This repository contains Subtale's **opinionated** rustfmt configuration file ([`.rustfmt.toml`][config]).
 
@@ -11,7 +11,7 @@ The [`.rustfmt.toml`][config] should be included in the root directory of your R
 
 ## Configuration options
 
-Below you can find the reasoning behind all of the configuration options present in Subtale's custom rustfmt configuration.
+Below, you can find the reasoning behind all of the configuration options present in Subtale's custom rustfmt configuration.
 
 Some of these settings are set to their default values; this is intentional to ensure that they are kept as default.
 
@@ -125,7 +125,7 @@ use qux::{h, i};
 
 ### `imports_layout = "HorizontalVertical"`
 
-Forces the style of items inside an imports block.
+Forces the style of items inside an import block.
 
 ```rs
 use foo::{xxxxxxxxxxxxxxxxxx, yyyyyyyyyyyyyyyyyy, zzzzzzzzzzzzzzzzzz};
@@ -216,7 +216,7 @@ fn main() {
 
 ### `use_try_shorthand = true`
 
-Replaces use of the `try!` macro with the `?` shorthand:
+Replaces the use of the `try!` macro with the `?` shorthand:
 
 ```rs
 try!(ipsum.map(|dolor| dolor.sit()));
